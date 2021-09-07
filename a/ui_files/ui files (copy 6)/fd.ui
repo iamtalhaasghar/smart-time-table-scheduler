@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>createDepartment</class>
+ <widget class="QDialog" name="createDepartment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create Department</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Department Name:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total Rooms:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>140</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total Labs:</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="departmentInfo">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>561</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Department Information</string>
+   </property>
+   <widget class="QLineEdit" name="departmentName">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>40</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="totalRooms">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>9</number>
+    </property>
+    <property name="value">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="totalLabs">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>211</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>9</number>
+    </property>
+    <property name="value">
+     <number>2</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="semester">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>561</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Semester</string>
+   </property>
+   <widget class="QLabel" name="classNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Class Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="contactHourLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1 Credit Hour = </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="className">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>30</y>
+      <width>291</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="courseNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Course Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="courseCodeLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Course Code:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="courseCode">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>291</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="courseName">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>110</y>
+      <width>291</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="theory">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>131</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Theoretical Course</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="lab">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>141</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Practical Course (Lab)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="totalCHLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total Credit Hours = </string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="contactHour">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>230</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="suffix">
+     <string>    Contact Hours</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="totalCH">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>260</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>3</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sampleCourseLabel">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>In TimeTable, the name will appear as:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sampleCourseName">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>189</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="instructorLabel">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>310</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Instructor :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="instructor">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>310</y>
+      <width>251</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>dfjkl</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dfd</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>471</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="saveCourse">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>620</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save Course</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="saveDepartment">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>620</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save Department</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="createClass">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>620</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Create Class</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>departmentName</tabstop>
+  <tabstop>className</tabstop>
+  <tabstop>courseCode</tabstop>
+  <tabstop>courseName</tabstop>
+  <tabstop>theory</tabstop>
+  <tabstop>lab</tabstop>
+  <tabstop>sampleCourseName</tabstop>
+  <tabstop>contactHour</tabstop>
+  <tabstop>totalCH</tabstop>
+  <tabstop>instructor</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>theory</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>contactHour</receiver>
+   <slot>stepUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>450</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>theory</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>totalCH</receiver>
+   <slot>stepDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lab</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>contactHour</receiver>
+   <slot>stepDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>450</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lab</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>totalCH</receiver>
+   <slot>stepUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveDepartment</sender>
+   <signal>clicked()</signal>
+   <receiver>departmentName</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveCourse</sender>
+   <signal>clicked()</signal>
+   <receiver>className</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createClass</sender>
+   <signal>clicked()</signal>
+   <receiver>className</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>450</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>courseName</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>className</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>329</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>315</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

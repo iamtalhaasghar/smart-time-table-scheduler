@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="OptionsToolBarIcons">
+    <file>icons/generateTimeTable.svg</file>
+  </qresource>
+</RCC>

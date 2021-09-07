@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="TimeTable">
+    <file>icons/delete_teacher.png</file>
+    <file>icons/add_teacher.png</file>
+    <file>icons/edit_teacher.png</file>
+    <file>icons/add_department.png</file>
+    <file>icons/delete_department.png</file>
+    <file>icons/edit_department.png</file>
+    <file>icons/program.svg</file>
+    <file>icons/teacher.svg</file>
+    <file>icons/class.svg</file>
+    <file>icons/departments.svg</file>
+    <file>icons/settings.svg</file>
+    <file>icons/duplicate.svg</file>
+    <file>icons/clashes.svg</file>
+    <file>icons/edit.svg</file>
+    <file>icons/generate.svg</file>
+  </qresource>
+</RCC>

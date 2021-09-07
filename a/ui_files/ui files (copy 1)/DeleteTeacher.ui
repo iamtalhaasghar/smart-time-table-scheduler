@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>allTeachers</class>
+ <widget class="QDialog" name="allTeachers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>All Teachers</string>
+  </property>
+  <widget class="QTreeWidget" name="teachersList">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>591</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Teacher ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Teacher Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Department</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="deleteTeacher">
+   <property name="geometry">
+    <rect>
+     <x>474</x>
+     <y>452</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete Teacher</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

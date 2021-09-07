@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainMenu</class>
+ <widget class="QMainWindow" name="mainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>843</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Smart Time Scheduler</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>843</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+   </widget>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="timeToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionGenerateTimeTable"/>
+   <addaction name="actionRemoveDuplicates"/>
+   <addaction name="actionEditTimeTable"/>
+   <addaction name="actionFindClashes"/>
+   <addaction name="separator"/>
+   <addaction name="actionSettings"/>
+  </widget>
+  <widget class="QToolBar" name="departmentToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>70</width>
+     <height>70</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionViewAllDepartments"/>
+   <addaction name="actionCreateDepartment"/>
+   <addaction name="actionEditDepartment"/>
+   <addaction name="actionDeleteDepartment"/>
+   <addaction name="separator"/>
+   <addaction name="actionViewAllTeachers"/>
+   <addaction name="actionAddTeacher"/>
+   <addaction name="actionEditTeacher"/>
+   <addaction name="actionDeleteTeacher"/>
+   <addaction name="separator"/>
+   <addaction name="actionCreateClass"/>
+   <addaction name="actionCreateProgram"/>
+  </widget>
+  <action name="actionGenerateTimeTable">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/generate.svg</normaloff>:/TimeTable/icons/generate.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Generate Time Table</string>
+   </property>
+   <property name="toolTip">
+    <string>Generates Time Table</string>
+   </property>
+  </action>
+  <action name="actionRemoveDuplicates">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/duplicate.svg</normaloff>:/TimeTable/icons/duplicate.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Duplicates</string>
+   </property>
+   <property name="toolTip">
+    <string>Removes Duplicate Periods of a Day</string>
+   </property>
+  </action>
+  <action name="actionEditTimeTable">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/edit.svg</normaloff>:/TimeTable/icons/edit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Time Table</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit Time Table</string>
+   </property>
+  </action>
+  <action name="actionFindClashes">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/clashes.svg</normaloff>:/TimeTable/icons/clashes.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Find Clashes</string>
+   </property>
+   <property name="toolTip">
+    <string>Finds Clashes in Time Table</string>
+   </property>
+  </action>
+  <action name="actionCreateDepartment">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/add_department.png</normaloff>:/TimeTable/icons/add_department.png</iconset>
+   </property>
+   <property name="text">
+    <string>Create Department</string>
+   </property>
+   <property name="toolTip">
+    <string>Create New Department</string>
+   </property>
+  </action>
+  <action name="actionDeleteDepartment">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/delete_department.png</normaloff>:/TimeTable/icons/delete_department.png</iconset>
+   </property>
+   <property name="text">
+    <string>DeleteDepartment</string>
+   </property>
+   <property name="toolTip">
+    <string>Deletes a Department</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/settings.svg</normaloff>:/TimeTable/icons/settings.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="toolTip">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionViewAllDepartments">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/departments.svg</normaloff>:/TimeTable/icons/departments.svg</iconset>
+   </property>
+   <property name="text">
+    <string>View All Departments</string>
+   </property>
+   <property name="toolTip">
+    <string>Lists all departments</string>
+   </property>
+  </action>
+  <action name="actionViewAllTeachers">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/teacher.svg</normaloff>:/TimeTable/icons/teacher.svg</iconset>
+   </property>
+   <property name="text">
+    <string>View All Teachers</string>
+   </property>
+   <property name="toolTip">
+    <string>View All Teachers</string>
+   </property>
+  </action>
+  <action name="actionAddTeacher">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/add_teacher.png</normaloff>:/TimeTable/icons/add_teacher.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Teacher</string>
+   </property>
+   <property name="toolTip">
+    <string>Add a new Teacher</string>
+   </property>
+  </action>
+  <action name="actionDeleteTeacher">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/delete_teacher.png</normaloff>:/TimeTable/icons/delete_teacher.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete Teacher</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete an existing Teacher</string>
+   </property>
+  </action>
+  <action name="actionEditDepartment">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/edit_department.png</normaloff>:/TimeTable/icons/edit_department.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Department</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit a Department</string>
+   </property>
+  </action>
+  <action name="actionEditTeacher">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/edit_teacher.png</normaloff>:/TimeTable/icons/edit_teacher.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Teacher</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit a existing Teacher</string>
+   </property>
+  </action>
+  <action name="actionCreateClass">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/class.svg</normaloff>:/TimeTable/icons/class.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Create Class</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a new class</string>
+   </property>
+  </action>
+  <action name="actionCreateProgram">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/TimeTable/icons/program.svg</normaloff>:/TimeTable/icons/program.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Create Program</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a new Degree Program</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

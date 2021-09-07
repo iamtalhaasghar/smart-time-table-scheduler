@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="calendar">
+    <file>calendar.svg</file>
+  </qresource>
+</RCC>
