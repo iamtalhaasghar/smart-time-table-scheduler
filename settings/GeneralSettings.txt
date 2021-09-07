@@ -1,0 +1,8 @@
+===
+2019-02-09 14:18:49.364903
+InstitutionName===Khwaja Fareed University of Engineering & IT
+StartTime===05:00
+EndTime===23:00
+PeriodDuration===90
+BreakDuration===15
+WorkingDays===['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']

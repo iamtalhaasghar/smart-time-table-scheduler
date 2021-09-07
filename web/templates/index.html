@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Smart Time Tables</title>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS stylesheet -->
+	<link rel="stylesheet" href={{url_for("static",filename="css/style.css")}} type="text/css">
+	<link rel="stylesheet" href={{url_for("static",filename="css/animated.css")}} type="text/css">
+	
+    <!-- Bootstrap CSS -->
+	<link rel="icon" type="image/png" href={{url_for("static",filename="img/favicon.ico")}} >
+    <link rel="stylesheet" href={{url_for("static",filename="css/bootstrap.min.css")}} >
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  </head>
+  <body style="background-color:#f2f2f2;">
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+  <!-- This is navbar-->
+  
+     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+	  <div class="container" id="logo_area">
+	  
+	  <a class="navbar-brand" href="index.html">
+	  <div class="col-xs-3 animated fadeInDown" id="details2">
+	      <h2>Smart <span>Time</span></h2>
+	  </div>
+	  
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  </div>
+	  <div class="container">   <!--navbar items container-->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#contact">Contact us</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="index.php">Terms & Conditions</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#aboutus">About us</a>
+		  </li>
+		  
+	   </ul>
+		
+	   </div>
+	  </div> <!--navbar items container-->
+	</nav>
+		 
+	<!--this is header div-->
+		<div class="jumbotron">
+			<div class="container">
+				<div id="details" class="animated fadeInLeft">
+					<h1>The Smart <span>Time Sheduler</span></h1>
+					<p>This website time shedulerThis website time sheduler</p>
+					<button onclick="window.location.href = 'sign_in';">Login</button>
+					<button onclick="window.location.href = 'sign_up';">Sign up</button>
+				</div>
+			</div>
+		  <img src={{url_for("static",filename="img/header1.jpg")}} alt="Header image">
+		</div>
+		
+		<!--Discription-->
+		<div class="container">
+			<div id="discription">
+				<h3>Discription</h3>
+				<p>
+				Our target is to develop a software named as “The Smart Time Scheduler” and to use it in helping the administrative personnel of our university to create and organize the Time Table of our university efficiently and in less time with no errors. At the same time, it will also fulfil the requirements of end users .i.e. Students and Teachers that they will be able to see their daily updated routines respectively. We will try to make an efficient algorithm which will be capable to create a dynamic time table with no bugs and clashes.
+				</p>
+			</div>
+		</div>
+		<!--Discription End-->
+	
+	<!--Feature area-->
+			<div class="row">
+				<div class="container custom_box">
+					<center>
+					<div class="custom_features container">
+					<div class="block-box container row">
+					<div class="block container-fluid col-md-4">
+					<img src={{url_for("static", filename="img/lecture.svg")}} alt="image" height="100px" width="100px">
+					<h2 class="feature-heading">100% No Clash Guarantee</h2>
+					<span class="feature-description">
+					Assign lectures to classes with no clashes. Our algorithm is so smart that if you try to break it you will never succeed.
+					</span>
+					</div>
+					<div class="block col-md-4">
+					<img src={{url_for("static", filename="img/search.svg")}} alt="hourglass" height="100px" width="100px">
+					<h2 class="feature-heading">Powerful Editing and Searching tools</h2>
+					<span class="feature-description">
+					We have made search very easy. Edit any lecture on the fly with out worry of disturbing other lectures, rooms and time slots.
+					In editing mode, we will tell you that when does it do not make any sense to change our original generated Time Table 
+					</span>
+					</div>
+					<div class="block col-md-4">
+					<img src={{url_for("static", filename="img/wall-calendar.svg")}} alt="calendar" height="100px" width="100px">
+					<h2 class="feature-heading">The best possible Time Management</h2>
+					<span class="feature-description">
+					Try out our Smart Time Scheduler and you will really fell that before using that you were just wasting your time.
+					</span>
+					</div>  
+					</div> 	<!--Ending block-box div here -->
+					<div class="block-box container row">
+					<div class="block col-md-4">
+					<img src={{url_for("static", filename ="img/rewind.svg")}} alt="Dynamic & Extra Intelligent" height="100px" width="100px">
+					<h2 class="feature-heading">Extra Intelligent</h2>
+					<span class="feature-description">
+					Testing our software in ever changing enviornments will never regret you. Trust me it is not just dynamic.
+					It is more than that. Extra Intelligent.
+					</span>
+					</div>
+					<div class="block col-md-4">
+					<img src={{url_for("static", filename="img/hourglass.svg")}} alt="hourglass" height="100px" width="100px">
+					<h2 class="feature-heading">Fast and Easy to Use</h2>
+					<span class="feature-description">
+					It`s fast, easy and reliable. You are welcome to break logic of our Smart and effecient algorithm. Let us know if you succeed.
+					</span>
+					</div>
+					<div class="block col-md-4">
+					<img src={{url_for("static", filename="img/calendar.svg")}} alt="calendar" height="100px" width="100px">
+					<h2 class="feature-heading">No more morning evening Issue</h2>
+					<span class="feature-description">
+					Don`t jump in this issue. Our algorithm is smart enough to cope up with this problem.
+					It really does this. Don`t believe just try it to find out.
+					</span>
+					</div>  
+					</div>
+					
+					</div>
+					</center>
+				</div>
+			</div>
+		<!--Feature area End-->		
+
+
+		
+	
+	<!--this is contact area-->
+		<div class="container-fluid" id="contact">
+				<h3>Contact Us</h3>
+				<p style="text-align: center; color: white;">____________</p>
+
+				<form>
+				<input class="naam" type="name" required="required" placeholder="Enter Name" maxlength="13">
+				<p/>
+				<input class="emai" type="email" required="required" placeholder="Email" >
+				<p/>
+				<textarea class="coment" required placeholder="Comment Here"></textarea>
+				<p/>
+				<input type="button" class="btn" value="Submit">
+				</form>
+		</div>
+		
+	
+	<!--this is contact area-->
+
+		<!--profiles-->
+		<center>
+	  <div class="files container-fluid" id="aboutus">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="card">
+				  <center><img src={{url_for("static",filename="img/usama.jpg")}} alt="ma"></center>
+				  <div class="aboutt">
+				  <h1>Usama</h1>
+				  <p class="title">CEO & Founder</p>
+				  <p class="uni">Pak Murtaza Soft. Tech. Park</p> 
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+				  <center><img width= auto src={{url_for("static",filename="img/talha.png")}} alt="ma"></center>
+				  <div class="aboutt">
+				  <h1>Talha Asghar</h1>
+				  <p class="title">FreeLancer, <br>Java Champion
+					</p>
+				  <p class="uni"></p> 
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+				  <center><img src={{url_for("static",filename="img/junaid.jpg")}} alt="ma"></center>
+				  <div class="aboutt">
+				  <h1>Junaid Nawab</h1>
+				  <p class="title">CEO & Founder <br> Jimmy Software Productions</p>
+				  <p class="uni"></p> 
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+				  <center><img src={{url_for("static",filename="img/arif.jpg")}} alt="ma"></center>
+				  <div class="aboutt">
+				  <h1>Arif</h1>
+				  <p class="title">CEO and Founder <br>Mauk Web Tech & Co.</p>
+				  <p class="uni"></p> 
+				  </div>
+				</div>
+			</div>
+			
+		</div>
+	  </div>
+	  </center>
+		
+    <!--this is footer div-->
+	<footer>
+		<div style="background-color: #24A7CF; border-bottom: 5px solid orange;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h5 class="mb-0">Get connected with us on social networks!</h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right" id="social">
+
+			<!--Facebook-->
+			<a class="fb-ic mr-3" role="button" href="#"><i class="fab fa-lg fa-facebook-f"></i></a>
+			<!--Twitter-->
+			<a class="tw-ic mr-3" role="button" href="#"><i class="fab fa-lg fa-twitter"></i></a>
+			<!--Google +-->
+			<a class="gplus-ic mr-3" role="button" href="#"><i class="fab fa-lg fa-google-plus-g"></i></a>
+			<!--Linkedin-->
+			<a class="li-ic mr-3" role="button" href="#"><i class="fab fa-lg fa-linkedin-in"></i></a>
+			<!--Instagram-->
+			<a class="ins-ic mr-3" role="button" href="#"><i class="fab fa-lg fa-instagram"></i></a>
+            
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5" id="foot">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Mauk Company</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">What about</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            news
+          </p>
+          <p>
+            new
+          </p>
+          <p>
+            hello
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="others">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Others</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#contact">Contact us</a>
+          </p>
+          <p>
+            <a href="#aboutus">About us</a>
+          </p>
+          <p>
+            <a href="#">Terms & Conditions</a>
+          </p>
+          
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Rahim Yar Khan,Pakistan</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> example@gmail.com</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+	  ©Copyright 2019<br>
+	  <a href="#aboutus">A product of _ Company</a>
+    </div>
+    <!-- Copyright -->
+
+	</footer>
+  </body>
+</html>

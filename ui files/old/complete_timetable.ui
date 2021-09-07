@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>generateTimeTable</class>
+ <widget class="QWidget" name="generateTimeTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Time Table Generation</string>
+  </property>
+  <widget class="QTextBrowser" name="timeTableInfo">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>140</y>
+     <width>401</width>
+     <height>511</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startGeneration">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start Generation</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="removeDuplicates">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>60</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Remove Duplicates</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>110</y>
+     <width>391</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Please wait as the process might take few minutes.</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>startGeneration</sender>
+   <signal>clicked()</signal>
+   <receiver>generateTimeTable</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>368</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

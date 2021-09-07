@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>viewTeachers</class>
+ <widget class="QDialog" name="viewTeachers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>All Teachers</string>
+  </property>
+  <widget class="QTreeWidget" name="teachersList">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>601</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Teacher ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Teacher Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Department</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

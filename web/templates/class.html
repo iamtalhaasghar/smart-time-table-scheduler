@@ -1,0 +1,8 @@
+﻿{% extends "dash.html" %}
+{% block title_before_table %}
+	<h3>Please enter your query in search bar below: </h3>
+	<form action={{to_go}} method="POST" >
+	<input name="toSearch" margin="auto" type="text" class="btn btn-sm btn-outline-secondary">
+	
+	
+{% endblock %}

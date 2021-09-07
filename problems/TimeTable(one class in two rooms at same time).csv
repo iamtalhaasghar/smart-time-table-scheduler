@@ -1,0 +1,26 @@
+Days,Rooms,P1,P2,P3,P4,P5
+Mon,R1,"['CS1B', 'ICT', 'Teacher', '0800-1000']","['$', '$', '$', '$']","['CS1B', 'ENG', 'Teacher', '1130-1300']","['CS2B', 'DISCRT', 'Teacher', '1315-1445']","['CS2B', 'OOP', 'Teacher', '1500-1630']"
+Mon,R2,"['CS4B', 'PY', 'Teacher', '0800-0930']",#,#,#,#
+Mon,R3,#,#,#,#,#
+Mon,CMPTR LAB1,"['CS1B', 'PF LAB', 'Teacher', '0800-1100']","['$', '$', '$', '$']",#,#,#
+Mon,CMPTR LAB2,#,#,#,#,#
+Tue,R1,"['CS1B', 'PHY', 'Teacher', '0800-0930']","['CS1B', 'PF', 'Teacher', '0945-1115']","['CS1B', 'CALC', 'Teacher', '1130-1300']","['CS2B', 'BASIC', 'Teacher', '1315-1445']","['CS2B', 'ENG', 'Teacher', '1500-1630']"
+Tue,R2,"['CS3B', 'DSA', 'Teacher', '0800-0930']",#,#,#,#
+Tue,R3,#,#,#,#,#
+Tue,CMPTR LAB1,"['CS1B', 'ICT LAB', 'Teacher', '0800-1100']","['$', '$', '$', '$']",#,#,#
+Tue,CMPTR LAB2,#,#,#,#,#
+Wed,R1,"['CS1B', 'CALC', 'Teacher', '0800-0930']","['CS1B', 'PF', 'Teacher', '0945-1115']","['CS2B', 'ENG', 'Teacher', '1130-1300']","['CS2B', 'PST', 'Teacher', '1315-1515']","['$', '$', '$', '$']"
+Wed,R2,"['CS4B', 'PY', 'Teacher', '0800-0930']",#,#,#,#
+Wed,R3,#,#,#,#,#
+Wed,CMPTR LAB1,"['CS2B', 'OOP LAB', 'Teacher', '0800-1100']","['$', '$', '$', '$']",#,#,#
+Wed,CMPTR LAB2,#,#,#,#,#
+Thu,R1,"['CS1B', 'ISL', 'Teacher', '0800-1000']","['$', '$', '$', '$']","['CS2B', 'DISCRT', 'Teacher', '1130-1300']","['CS3B', 'DLD', 'Teacher', '1315-1445']","['CS3B', 'DSA', 'Teacher', '1500-1630']"
+Thu,R2,#,#,#,#,#
+Thu,R3,#,#,#,#,#
+Thu,CMPTR LAB1,"['CS3B', 'DSA LAB', 'Teacher', '0800-1100']","['$', '$', '$', '$']",#,#,#
+Thu,CMPTR LAB2,#,#,#,#,#
+Fri,R1,"['CS1B', 'ENG', 'Teacher', '0800-0930']","['CS1B', 'PHY', 'Teacher', '0945-1115']","['CS2B', 'OOP', 'Teacher', '1130-1300']","['CS2B', 'BASIC', 'Teacher', '1315-1445']","['CS3B', 'DLD', 'Teacher', '1500-1630']"
+Fri,R2,#,#,#,#,#
+Fri,R3,#,#,#,#,#
+Fri,CMPTR LAB1,"['CS4B', 'PY LAB', 'Teacher', '0800-1400']","['$', '$', '$', '$']","['$', '$', '$', '$']","['$', '$', '$', '$']",#
+Fri,CMPTR LAB2,#,#,#,#,#

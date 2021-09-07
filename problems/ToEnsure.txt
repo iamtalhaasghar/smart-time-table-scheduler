@@ -1,0 +1,4 @@
+>Does function changes/corrupts the values being passed by reference?
+>What happens if course codes are not used and two semesters have same subjects?
+>one class two rooms clash resolve finder
+>check availability of room for consecutive lectures
